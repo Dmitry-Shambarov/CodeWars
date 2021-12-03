@@ -23,3 +23,14 @@ function DNAtoRNA(dna) {
   function solution(str){
     return str.split("").reverse().join("");
   }
+
+  //What's the real floor?
+  function getRealFloor(n) {
+    if(n < 13) {
+      return n - 1
+    } else if(n >= 13) {
+      return n - 2
+    } else {
+      return n
+    }
+  }
