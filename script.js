@@ -55,3 +55,19 @@ function DNAtoRNA(dna) {
     }
     return cost
   }
+
+  //Bumps in the Road
+  function bump(x){
+    let countN = x.split('');
+    let result = '';
+      for(let i = 0; i < countN.length; i++) {
+        if(countN[i] === 'n') {
+          result += countN[i]
+        }
+      }
+      if(result.length > 15) {
+        return "Car Dead";
+      }else{
+        return "Woohoo!"
+      }
+    }
